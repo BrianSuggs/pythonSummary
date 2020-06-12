@@ -1,13 +1,13 @@
 # pythonSummary
 This is my personal summary of my python knowledge.
 
- 
+
 Fundamentals
   -Syntax
   -Operators & Operands
-  -Logical Operators
   -Statements & Conditons
-
+	-Strings
+  
 Data Structures
   -Objects
   -Classes
@@ -39,3 +39,4 @@ Concepts (Machine Learning/ AI)
 
 Projects
   -Statistical Models
+	-String manipulation
