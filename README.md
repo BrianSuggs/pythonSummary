@@ -1,7 +1,7 @@
 # pythonSummary
 This is my personal summary of my python knowledge.
 
-
+ 
 Fundamentals
   -Syntax
   -Operators & Operands
