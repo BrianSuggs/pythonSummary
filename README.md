@@ -40,3 +40,8 @@ My personal summary of my python knowledge.
 **Projects**
   -Statistical Models
   -String manipulation
+
+
+**derp**
+this line bad
+this line good
