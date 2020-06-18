@@ -41,7 +41,6 @@ My personal summary of my python knowledge.
   -Statistical Models
   -String manipulation
 
-
 **derp**
 this line bad
 this line good
