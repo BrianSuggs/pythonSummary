@@ -14,11 +14,14 @@
 
 # SYNTAX - Values and Variables
 
-x = 10
-y = "ten"
-z = x + 5
+x = 10            # assignment to int
+y = "ten"         # assignment to string
+w = x + y         # assignment error
+w = x,y           # assignment to tuple   (10, 'ten')
+z = x + 5         
 
-print(x, y, z)
+print(x + y)      # error datas type is not computable
+print(x,y,z)      # proper way to print multipule data types
 
 
 ########################################################################################################################################
@@ -28,14 +31,24 @@ print(x, y, z)
 
 '''
 operatiors are icons for coomputation
-  + is addition
-  - is subtraction
-  * is multiplication
-  ** is to the power of
-  / is division
-  // is floor division
-  = is assignment
-  == is check if equal
+  +   is addition
+  -   is subtraction
+  *   is multiplication
+  **  is to the power of
+  /   is division
+  //  is floor division
+  =   is assignment
+  
+ Logical operators
+  ==  is check if equal
+  !=  is check if not equal
+  |   is logical OR
+  &   is logical AND
+  not is logical NOT
+ 
+ Keywords
+  in
+  type
 
 Python follows PEMDAS
 '''
