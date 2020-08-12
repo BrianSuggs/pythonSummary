@@ -14,15 +14,42 @@
 
 # SYNTAX - Values and Variables
 
+#Illegal variable names:
+'''
+2myvar = "John"   # begining variable name with a number
+my-var = "John"   # using a special character in the variable name (only underscore _ is allowed)
+my var = "John"   # using a special character in the variable name
+'''
+
+
 x = 10            # assignment to int
 y = "ten"         # assignment to string
-w = x + y         # assignment error
+#w = x + y         # assignment error data types are not computable
 w = x,y           # assignment to tuple   (10, 'ten')
 z = x + 5         
 
-print(x + y)      # error datas type is not computable
+#print(x + y)      # error datas type is not computable
 print(x,y,z)      # proper way to print multipule data types
 
+
+# Multi-Assignment  
+# assign values to multiple variables in one line
+x, y, z = 35, "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+# assign the same value to multiple variables in one line
+x = y = z = "Apple"
+print(x)
+print(y)
+print(z)
+
+
+# Global variables
+# variables created outside of functions
+# alternatively you can cast it to the global scope by using the keyword global
+global lastnumber = 999
 
 ########################################################################################################################################
 
@@ -78,7 +105,7 @@ while(i < num3):
     i += 1
     print("loop ", i)
 
-#do-while loop
+#do-while loop 
 
 #for loop
 for i in range(6):
@@ -97,9 +124,9 @@ for i in range(6):
 
 word = "I am a string \n"
 
-word2 = "hi "
+word2 = "Hi "
 
-word3 = word2 + word
+word3 = word2 + word    # this is legal because the varibles are the same type, str
 
 print(word3 * 3)
 
@@ -109,8 +136,26 @@ print(word3 * 3)
 
 # FUNCTION CALLS
 
+def function1():
+  num1 = 10
+  num2 = 5
+  x = num1 * num2
+  return x
 
-#main:
+def function2():
+  num1 = 50
+  num2 = 10
+  x = num1 * num2
+  print(x)
+
+def main():
+  # multi has the value of x
+  multi = function1()
+  print(multi)
+  
+  # you can also call without assigning a variable
+  # but this would require having the print statement in the function
+  function2()
 
 
 
@@ -122,3 +167,9 @@ print(word3 * 3)
 # single line comment
 
 # there is no multi-line comment syntax
+
+"""
+
+alternative to multi-line commenting
+
+"""
