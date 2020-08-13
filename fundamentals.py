@@ -64,6 +64,7 @@ operatiors are icons for coomputation
   **  is to the power of
   /   is division
   //  is floor division
+  %   is modulus
   =   is assignment
   
  Logical operators
