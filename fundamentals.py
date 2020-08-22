@@ -91,30 +91,50 @@ num1 = 12
 num2 = 6
 num3 = 10
 
-#if statement
+# if statement
 if(num2*2) == num1:
     print(num1, " is twice the size of ", num2)
 
-#else statement
+# else statement
 else:
     print("num2 is not a factor of num1")
     
-#if-else statement
+# elif statement
+# The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition"
+a = 33
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
 
 #while loop
 while(i < num3):
     i += 1
     print("loop ", i)
 
-#do-while loop 
+# do-while loop 
 
 #for loop
+# To loop through a set of code a specified number of times, we can use the range() function,
+# The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
 for i in range(6):
-    if i == 1:
-        print(i, " dollar")
-    else:
-        print(i, " dollars")
-    
+  # grammerly correct
+  if i == 1:
+    print(i, " dollar")
+  else:
+    print(i, " dollars")
+
+# Note that range(6) is not the values of 0 to 6, but the values 0 to 5
+# The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: 
+# range(2, 6), which means values from 2 to 6 (but not including 6)
+for x in range(2, 6):
+  print(x)
+
+# The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3)
+for x in range(2, 30, 3):
+  print(x)
+
 
 
 ########################################################################################################################################
