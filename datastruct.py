@@ -17,13 +17,18 @@
 ########################################################################################################################################
 
 
-# OBJECTS
+# CLASSES & OBJECTS
+# A Class is like an object constructor, or a "blueprint" for creating objects
+# To create a class, use the keyword class
+# Create a class named MyClass, with a property named x
+class MyClass:
+  x = 5
 
-
-########################################################################################################################################
-
-
-# CLASS
+# Create Objects
+# Now we can use the class named MyClass to create objects
+# Create an object named p1, and print the value of x
+p1 = MyClass()
+print(p1.x)
 
 
 ########################################################################################################################################
@@ -115,11 +120,44 @@ list1.extend(list2)
 print(list1)
 
 
-
 ########################################################################################################################################
 
 
 # ARRAY
+# Python does not have built-in support for Arrays, but Python Lists can be used instead
+# you will have to import a library, like the NumPy library
+# Arrays are used to store multiple values in one single variable
+
+# An array is a special variable, which can hold more than one value at a time
+# An array can hold many values under a single name, and you can access the values by referring to an index number
+
+cars = ["Ford", "Volvo", "BMW"]
+x = cars[0]
+
+print(x)
+
+# Modify the value of the first array item
+cars[0] = "Toyota"
+
+# Return the number of elements in the cars array
+print(len(cars))
+
+# Looping array items
+for x in cars:
+  print(x)
+  
+# Adding array element
+cars.append("Honda")
+print(cars)
+
+# Removing array elements
+# Delete the second element of the cars array
+cars.pop(1)
+print(cars)
+
+# You can also use the remove() method to remove an element from the array
+cars.remove("Volvo")
+print(cars)
 
 
 ########################################################################################################################################
@@ -153,8 +191,6 @@ tuple2 = (1, 2, 3)
 
 tuple3 = tuple1 + tuple2
 print(tuple3)
-
-
 
 
 ########################################################################################################################################
