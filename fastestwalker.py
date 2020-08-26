@@ -1,3 +1,43 @@
+# Given: A list of speeds
+# Find: The walker with the fastest speed
+
+# Modify!!! get list of speeds and list of walker names
+# and print the name of the fastest walker
+
+# Get speeds
+speedList = []
+walkerList = []
+
+numWalkers = int(input("Enter number of walkers: "))
+
+for i in range(numWalkers):
+    speed = float(input("Enter speed: "))
+    speedList.append(speed)
+    walker = input("Enter walker name: ")
+    walkerList.append(walker)
+
+# Initialize high speed
+high_speed = speedList[0]
+fastest_walker = 0
+
+# Find fastest speed
+for i in range(len(speedList)):
+    if speedList[i] > high_speed:
+        high_speed = speedList[i]
+        fastest_walker = i
+
+# print highest speed
+print("The fastest speed is ", high_speed)
+print("The fastest walker is at position ", fastest_walker)
+print("The name of the fastest walker is ", walkerList[fastest_walker]) 
+
+
+
+
+
+"""
+
+
 # Given n distances and times
 # Find the fastest speed of all walkers
 
@@ -44,3 +84,6 @@ while i < num:
 fastest = fastest * 60
 
 print ("The fastest speed is: ", fastest, "mph")
+
+
+"""
