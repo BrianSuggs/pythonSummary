@@ -109,3 +109,46 @@ def main():
     highPopulationStates(abbrevStates, statePopulation, maxPop)
 
     
+    
+#################################################################################################################################################
+
+
+
+# Brian Suggs
+# 2/20/18
+# CSC 110 Assignment 4-2 -----------------------------------------------
+# This program will prompt the user for a number (n). The program will then
+# find and return the number of the fibonacci sequence at the nth place
+
+def fib(n):
+    # initialize List
+    sequence = [0,1]
+    i = 0
+
+    # specify invalid inputs
+    if n < 0:
+        return -1
+    else:
+        while i < (n):
+            # nth is the sum of two list items
+            # this expresses the formula to the fibonacci's sequence
+            nth = sequence[i] + sequence[i + 1]
+            sequence.append(nth)
+            i = i + 1
+
+        # returns the value of the fibonacci number at the nth place
+        # of the sequence
+        return sequence[n-1]
+
+def main():
+    # test variables
+    test1 = fib(4)
+    test2 = fib(10)
+    test3 = fib(-4)
+
+    # print test runs from main
+    print("The 4th Fibonacci number is ", test1)
+    print("The 10th Fibonacci number is ", test2)
+    print("fib(-4) = ", test3)
+
+    
