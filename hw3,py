@@ -1,0 +1,32 @@
+# Brian Suggs
+# 2/12/18
+# CSC 110 Assignment 3-1 -----------------------------------------------
+# This program will print out the percentage of cars that drove through
+# the speed sensor below the speed limit
+
+numCars = int(input("Enter number of cars that pass the sensor: "))
+carSpeeds = []
+belowSpeed = 0
+
+# Initialize variable
+i = 0
+
+# creates the list using user's input data as appending items
+while i < numCars:
+    speeds = int(input("Enter speed for car " + str(i+1) + ": "))
+    carSpeeds.append(speeds)
+    i += 1
+
+# Get speed limit from user
+speedLimit = int(input("What is the speed limit: "))
+
+# evaluate the list to get the number of cars under or on the speed limit
+for i in range(len(carSpeeds)):
+    if carSpeeds[i] <= speedLimit:
+        belowSpeed = belowSpeed + 1
+
+# get percentage
+percentage = (belowSpeed/ numCars) * 100
+
+print("The percentage of cars that were within the speed limit is "
+      + str(percentage) + "%")
