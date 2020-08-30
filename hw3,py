@@ -30,3 +30,37 @@ percentage = (belowSpeed/ numCars) * 100
 
 print("The percentage of cars that were within the speed limit is "
       + str(percentage) + "%")
+
+
+
+# Brian Suggs
+# 2/12/18
+# CSC 110 Assignment 3-2 -----------------------------------------------
+# This program will print all numbers from within the range of two numbers
+# at the rate of another number
+
+lowRange = int(input("Enter low range: "))
+highRange = int(input("Enter high range: "))
+
+# Amount at which the integers in the list increases by
+number = int(input("Enter the number: "))
+
+# Get List
+resultList = []
+
+# Items used to make the list
+item = lowRange
+
+# Special case to make the list look nicer
+if lowRange == 1:
+    item = number
+
+# Add numbers to list
+while item <= highRange:
+    resultList.append(item)
+    item += number
+
+print("The resulting list is: ")
+print(resultList)
+
+
