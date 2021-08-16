@@ -63,12 +63,12 @@ class Person:
     mysillyobject.age = age
   
   # abc is a placeholder for mysillyobject which is an instance of the class
-  def myfunc(abc):
+  def myfunc2(abc):
     print("Hello my name is " + abc.name)
 
 # p1 is an object of class Person
-p1 = Person("John", 36)
-p1.myfunc()
+p1 = Person("Terry", 38)
+p1.myfunc2()
 
 # Modify Object Properties
 p1.age = 40
